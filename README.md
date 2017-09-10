@@ -1,6 +1,11 @@
 # Simple requestAnimationFrame helper
 
+## Install
+
+`npm install mud-from-to` or `yarn add mud-from-to`
+
 ## Usage example
+
 
 ```
 import 'fromTo' from 'mud-from-to'
