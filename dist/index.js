@@ -1,17 +1,11 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	(global['mud-fromto'] = factory());
+	(global.mudFromTo = factory());
 }(this, (function () { 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-/**
- * Animate $target from start to end
- * @param {Object} options
- * @param {Function} onTick - function to be called at each tick
- * @return {Promise}
- */
 function fromTo() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var onTick = arguments[1];
@@ -47,11 +41,11 @@ function fromTo() {
 
       next = Math.round(easing(timeElapsed, start, end - start, duration));
       if (condition(lastTick, next, end)) {
-        frame = requestAnimationFrame(loop);
+        frame = window.requestAnimationFrame(loop);
         onTick && onTick(next);
       } else {
         resolve(lastTick);
-        cancelAnimationFrame(frame);
+        window.cancelAnimationFrame(frame);
         timeElapsed = null;
         timeStart = null;
         frame = null;
@@ -61,10 +55,6 @@ function fromTo() {
     frame = window.requestAnimationFrame(loop);
   });
 }
-
-fromTo({ start: 0, end: 1000 }).then(function (v) {
-  console.log('done', v);
-});
 
 return fromTo;
 
