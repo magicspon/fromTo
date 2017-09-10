@@ -1,7 +1,19 @@
 # Change Log
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
-and this project adheres to [Semantic Versioning](http://semver.org/).
+
+### 1.0.3
+
+#### Update
+
+- Removed unused dependencies
+
+### 1.0.2
+
+#### Update
+
+- Description updated
+- Update readme
 
 ### 1.0.1
 

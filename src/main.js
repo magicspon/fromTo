@@ -2,7 +2,7 @@ export default function fromTo(options = {}, onTick) {
   const defaults = {
     easing(t, b, c, d) {
       if((t /= d / 2) < 1) return c / 2 * t * t + b
-      return -c / 2 * ((--t) * (t - 2) - 1) + b // eslint-disable-line
+      return -c / 2 * ((--t) * (t - 2) - 1) + b
     },
     duration: 1000
   }

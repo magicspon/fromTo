@@ -1,25 +1,13 @@
 {
   "name": "mud-from-to",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/index.min.js",
-  "output": "dist/index.js",
-  "dependencies": {
-    "ms": "^2.0.0",
-    "raf": "^3.3.2"
-  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^21.0.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
-    "babel-runtime": "^6.26.0",
     "jest": "^21.0.2",
-    "regenerator-runtime": "^0.11.0",
     "rollup": "^0.46.0",
     "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-commonjs": "^8.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1"
   },
   "scripts": {
@@ -30,7 +18,7 @@
   "files": [
     "dist"
   ],
-  "description": "``` import 'fromTo' from 'mudFromTo'",
+  "description": "Simple promise requestAnimationFrame helper",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/magicspon/fromTo.git"
