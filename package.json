@@ -29,5 +29,16 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "description": "``` import 'fromTo' from 'mudFromTo'",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicspon/fromTo.git"
+  },
+  "author": "Dave Stockley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicspon/fromTo/issues"
+  },
+  "homepage": "https://github.com/magicspon/fromTo#readme"
 }
