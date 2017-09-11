@@ -1,6 +1,6 @@
 {
   "name": "mud-from-to",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.min.js",
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

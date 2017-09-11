@@ -7,7 +7,7 @@ export default [
 		entry: 'src/main.js',
 		dest: pkg.main,
 		format: 'umd',
-		moduleName: 'mudFromTo',
+		moduleName: 'fromTo',
 		plugins: [
 			uglify(),
 			babel({
