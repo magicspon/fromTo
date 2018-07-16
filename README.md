@@ -8,7 +8,7 @@
 
 
 ```
-import 'fromTo' from 'mud-from-to'
+import fromTo from 'mud-from-to'
 
 fromTo({
     start: 0, 
